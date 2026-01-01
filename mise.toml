@@ -1,0 +1,7 @@
+[tasks.format]
+description = "Format all code"
+run = ["npm run format", "uv run ruff format scripts/"]
+
+[tasks.generate]
+description = "Generate enzymes.ts from BioPython"
+run = ["uv run python scripts/generate.py", "npx prettier --write src/enzymes.ts"]

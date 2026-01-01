@@ -1,0 +1,19 @@
+[project]
+name = "restriction-enzymes"
+version = "0.1.0"
+description = "Restriction enzyme data extraction from BioPython"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["biopython>=1.84"]
+
+[dependency-groups]
+dev = ["ruff>=0.9"]
+
+[project.scripts]
+generate-enzymes = "scripts.generate:main"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
