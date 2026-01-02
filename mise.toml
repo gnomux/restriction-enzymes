@@ -1,3 +1,10 @@
+[tools]
+node = "22"
+
+[tasks.test]
+description = "Run tests"
+run = "npm test"
+
 [tasks.format]
 description = "Format all code"
 run = ["npm run format", "uv run ruff format scripts/"]
