@@ -1,9 +1,17 @@
 [tools]
 node = "22"
 
+[tasks.install]
+description = "Install dependencies"
+run = "npm ci"
+
 [tasks.test]
 description = "Run tests"
 run = "npm test"
+
+[tasks.build]
+description = "Build the package"
+run = "npm run build"
 
 [tasks.format]
 description = "Format all code"
