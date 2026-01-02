@@ -1,6 +1,9 @@
 # restriction-enzymes
 
-Restriction enzyme data and utilities for TypeScript/JavaScript. Data is extracted from BioPython's `Bio.Restriction` module.
+Restriction enzyme data and utilities.
+
+* Typescript suppport.
+* Data is extracted from BioPython's `Bio.Restriction` module.
 
 ## Installation
 
